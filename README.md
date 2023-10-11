@@ -32,9 +32,9 @@
   ```
 * После сборки контейнеров убедиться, что контейнер с БД работает, выполнить миграции и запуск приложения: 
   ```
-  docker compose exec app -it python manage.py makemigrations
-  docker compose exec app -it python manage.py migrate
-  docker compose exec app -it python manage.py runserver
+  docker compose exec -it  app python manage.py makemigrations
+  docker compose exec -it  app -it python manage.py migrate
+
   ```
 * Перейти в браузере по адресу 127.0.0.1:8000
   Или использовать другой способ для тестирования API, например, Postman.
@@ -45,4 +45,4 @@
 ```
 {"questions_num": 1000}
 ```
-![post запрос](путь_к_изображению)
+![post запрос](https://i.ibb.co/mbBXXFc/image.jpg)
