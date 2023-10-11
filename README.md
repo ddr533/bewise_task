@@ -32,8 +32,8 @@
   ```
 * После сборки контейнеров убедиться, что контейнер с БД работает, выполнить миграции и запуск приложения: 
   ```
-  docker compose exec -it  app python manage.py makemigrations
-  docker compose exec -it  app -it python manage.py migrate
+  docker compose exec -it app python manage.py makemigrations
+  docker compose exec -it app python manage.py migrate
 
   ```
 * Перейти в браузере по адресу 127.0.0.1:8000
